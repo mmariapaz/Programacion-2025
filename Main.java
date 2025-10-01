@@ -30,5 +30,9 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+            // Crear el comando y ejecutarlo
+Command billing = new BillingCommand(processor, job1);
+billing.execute();
+   
     }
 }
