@@ -129,3 +129,6 @@ public class DocumentProcessor implements DocumentSubject {
         notifyObservers(null, "Billing: facturación simulada para usuario " + user.getUsername());
     }
 }
+public void triggerBilling(DocumentJob job) {
+    System.out.println("Facturación ejecutada para documento: " + job.getName());
+}
